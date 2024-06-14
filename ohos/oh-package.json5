@@ -1,0 +1,13 @@
+{
+  "name": "barcode_scan2",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/flutter_ohos": "file:./har/flutter.har",
+    "@ohos/protobufjs": "^2.0.1",
+    "long": "^5.2.1"
+  }
+}
