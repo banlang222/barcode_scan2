@@ -10,10 +10,11 @@ import { AbilityAware, AbilityPluginBinding,
 import { FlutterPluginBinding } from '@ohos/flutter_ohos/src/main/ets/embedding/engine/plugins/FlutterPlugin';
 import { scanBarcode, scanCore } from '@kit.ScanKit';
 import { EventSink, StreamHandler } from '@ohos/flutter_ohos/src/main/ets/plugin/common/EventChannel';
-import { abilityAccessCtrl, bundleManager } from '@kit.AbilityKit';
+import { abilityAccessCtrl, bundleManager, ErrorCode } from '@kit.AbilityKit';
 import { camera } from '@kit.CameraKit';
 import { ScanResult, ResultType, Configuration, BarcodeFormat } from './protos.js';
 import FormatTrans from './formatTrans';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 const TAG = "BarcodeScanPlugin";
 
@@ -41,8 +42,8 @@ export default class BarcodeScanPlugin implements FlutterPlugin, AbilityAware, M
 
   onAttachedToEngine(binding: FlutterPluginBinding): void {
     Log.d(TAG, "attached to engine");
-      this.messenger = binding.getBinaryMessenger();
-      this.startListening();
+    this.messenger = binding.getBinaryMessenger();
+    this.startListening();
   }
 
   onDetachedFromEngine(binding: FlutterPluginBinding): void {
@@ -146,9 +147,22 @@ export default class BarcodeScanPlugin implements FlutterPlugin, AbilityAware, M
       let buff : Uint8Array = ScanResult.encode(data).finish();
       Log.d(TAG, "scan result=" + JSON.stringify(data.toJSON()));
       result.success(buff);
-    }).catch((error: Error)=>{
-      Log.d(TAG, "scan failed: "+ JSON.stringify(error));
-      result.error("scan error", JSON.stringify(error), null);
+    }).catch((error: BusinessError)=>{
+      Log.d(TAG, "scan failed: code:" + error.code + "," + JSON.stringify(error));
+      let data = ScanResult.create({
+        type: ResultType.Error,
+        rawContent: "",
+        format: BarcodeFormat.unknown
+      })
+      if(error.code == 1000500002) {
+        data.type = ResultType.Cancelled;
+      } else {
+        data.type = ResultType.Error;
+        data.format = BarcodeFormat.unknown;
+        data.rawContent = JSON.stringify(error);
+      }
+      let buff : Uint8Array = ScanResult.encode(data).finish();
+      result.success(buff);
     });
   }
 
