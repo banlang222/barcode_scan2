@@ -6,6 +6,9 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "barcode_scan2": "file:../har/barcode_scan2.har"
-  }
+    "barcode_scan2": "file:../har/barcode_scan2.har",
+    "long": "^5.2.1"
+  },
+  "devDependencies": {},
+  "dynamicDependencies": {}
 }

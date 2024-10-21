@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@ohos/flutter_ohos": "file:./har/flutter.har",
-    "@ohos/protobufjs": "^2.0.1",
+    "@ohos/protobufjs": "^2.1.0",
     "long": "^5.2.1"
   }
 }

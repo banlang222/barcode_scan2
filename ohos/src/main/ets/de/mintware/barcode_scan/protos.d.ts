@@ -1,4 +1,5 @@
 import * as $protobuf from "@ohos/protobufjs";
+
 import Long = require("long");
 /** Properties of an AndroidConfiguration. */
 export interface IAndroidConfiguration {

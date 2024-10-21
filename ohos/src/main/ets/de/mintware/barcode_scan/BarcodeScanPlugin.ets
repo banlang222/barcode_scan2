@@ -111,6 +111,9 @@ export default class BarcodeScanPlugin implements FlutterPlugin, AbilityAware, M
 
   onRequestPermission(result: MethodResult) : void {
     Log.d(TAG, "on request permission");
+    result.success(false);
+    this.sink?.success("PERMISSION_GRANTED");
+    return;
     if(this.checkPermission()) {
       result.success(false);
       Log.d(TAG, "has permission");

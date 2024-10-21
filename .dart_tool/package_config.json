@@ -3,79 +3,79 @@
   "packages": [
     {
       "name": "characters",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/characters-1.2.1",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/characters-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/collection-1.17.0",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/collection-1.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "fixnum",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/fixnum-1.1.0",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/fixnum-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/banlang/flutter_flutter/packages/flutter",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/flutter_flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/flutter_lints-2.0.3",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/flutter_lints-2.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/js-0.6.5",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
     {
       "name": "lints",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/lints-2.0.1",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/material_color_utilities-0.2.0",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/material_color_utilities-0.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.13"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/meta-1.8.0",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/meta-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "pedantic_mono",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/pedantic_mono-1.21.1",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/pedantic_mono-1.21.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "protobuf",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/protobuf-2.1.0",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/protobuf-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/banlang/flutter_flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/flutter_flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///Users/banlang/.pub-cache/hosted/pub.flutter-io.cn/vector_math-2.1.4",
+      "rootUri": "file:///Users/banlang/StudioProjects/flutter/pub_cache/hosted/pub.flutter-io.cn/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -86,7 +86,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-06-12T07:45:27.665666Z",
+  "generated": "2024-10-21T04:29:51.029417Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }
